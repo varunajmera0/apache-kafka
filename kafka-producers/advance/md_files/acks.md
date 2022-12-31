@@ -25,7 +25,7 @@ If using Kafka < v3.0, acks=1
 If using Kafka >= v3.0, acks=all
 ```
 
-![Kafka Message Structure](../../../assets/producers_config/acks.png "Difference between ack=1 and ack=all")
+![ack](../../../assets/producers_config/acks.png "Difference between ack=1 and ack=all")
 
 > What is In-sync replicas?
 > - Basically defines how many replicas that the producer must receive before considering a successful commit. 
