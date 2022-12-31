@@ -16,7 +16,7 @@ In this section, we will discuss some of the ones we judge are the most importan
 ### Instructions
 I have implemented `acks` and `retries` configs. You can use [this](https://github.com/varunajmera0/apache-kafka/tree/main/kafka-producers/advance).
 
- - It will create topic automatically. Config parameters in [.env](https://github.com/varunajmera0/apache-kafka/tree/main/kafka-produces/advance/.env).
+ - It will create topic automatically. Config parameters in [.env](https://github.com/varunajmera0/apache-kafka/blob/main/kafka-producers/advance/.env).
  - Run Zookeepeer
    > bin/zookeeper-server-start.sh config/zookeeper.properties
  - Run Brokers - Copy these [brokers files](https://github.com/varunajmera0/apache-kafka/tree/main/kafka-producers/brokers) in config folder of kafka.
