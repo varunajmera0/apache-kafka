@@ -61,7 +61,7 @@ let's consider a replication factor of 3:
     
 In summary, when `acks=all` with a `replication.factor=N` and `min.insync.replicas=M` we can tolerate N-M brokers going down for topic availability purposes.
 
-[What About Retries?](https://github.com/varunajmera0/apache-kafka/kafka-produces/advance/md_files/retries "Retries Config")
+[What About Retries?](https://github.com/varunajmera0/apache-kafka/blob/main/kafka-producers/advance/md_files/retries.md "Retries Config")
 
 
 > Happy Coding! :v:

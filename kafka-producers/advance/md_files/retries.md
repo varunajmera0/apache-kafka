@@ -48,6 +48,6 @@ If `retries > 0`, for example, retries = 2147483647 (Kafka >= v2.1), the produce
 
 By default, the producer will wait 100ms between retries, but you can control this using the retry.backoff.ms parameter.
 
-[What About Duplicate Messages & Order Of Message?]()
+[What About Duplicate Messages & Order Of Message?](https://github.com/varunajmera0/apache-kafka/blob/main/kafka-producers/advance/md_files/enable.idempotence.md)
 
 > Happy Coding! :v:

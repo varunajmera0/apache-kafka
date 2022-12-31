@@ -7,26 +7,26 @@ Deep dive into Kafka producers configs
 In this section, we will discuss some of the ones we judge are the most important:
 
 ### Configs
-1. [acks](https://github.com/varunajmera0/apache-kafka/kafka-produces/advance/md_files/acks "Acks Config")
-2. [retries](https://github.com/varunajmera0/apache-kafka/kafka-produces/advance/md_files/retries "Retries Config")
-3. [batch.size](https://github.com/varunajmera0/apache-kafka/kafka-produces/advance/md_files/batch.size "Batch Size Config")
-4. [enable.idempotence](https://github.com/varunajmera0/apache-kafka/kafka-produces/advance/md_files/enable.idempotence "Enable Idempotence Config")
-5. [compression.type](https://github.com/varunajmera0/apache-kafka/kafka-produces/advance/md_files/enable.idempotence "Compression Type Config")
+1. [acks](https://github.com/varunajmera0/apache-kafka/blob/main/kafka-producers/advance/md_files/acks.md "Acks Config")
+2. [retries](https://github.com/varunajmera0/apache-kafka/blob/main/kafka-producers/advance/md_files/retries.md "Retries Config")
+3. [batch.size](https://github.com/varunajmera0/apache-kafka/blob/main/kafka-producers/advance/md_files/batch.size.md  "Batch Size Config")
+4. [enable.idempotence](https://github.com/varunajmera0/apache-kafka/blob/main/kafka-producers/advance/md_files/enable.idempotence.md  "Enable Idempotence Config")
+5. [compression.type](https://github.com/varunajmera0/apache-kafka/blob/main/kafka-producers/advance/md_files/enable.idempotence.md  "Compression Type Config")
 
 ### Instructions
-I have implemented `acks` and `retries` configs. You can use [this](https://github.com/varunajmera0/apache-kafka/kafka-produces/advance).
+I have implemented `acks` and `retries` configs. You can use [this](https://github.com/varunajmera0/apache-kafka/tree/main/kafka-producers/advance).
 
- - It will create topic automatically. Config parameters in [.env](https://github.com/varunajmera0/apache-kafka/kafka-produces/advance/.env).
+ - It will create topic automatically. Config parameters in [.env](https://github.com/varunajmera0/apache-kafka/tree/main/kafka-produces/advance/.env).
  - Run Zookeepeer
    > bin/zookeeper-server-start.sh config/zookeeper.properties
- - Run Brokers - Copy these [brokers files](https://github.com/varunajmera0/apache-kafka/kafka-produces/brokers) in config folder of kafka.
+ - Run Brokers - Copy these [brokers files](https://github.com/varunajmera0/apache-kafka/tree/main/kafka-producers/brokers) in config folder of kafka.
    > bin/kafka-server-start.sh config/server0.properties
    >
    > bin/kafka-server-start.sh config/server1.properties
    > 
    > bin/kafka-server-start.sh config/server2.properties
  - Install Dependencies
-   > pip3 install -r [requirements.txt](https://github.com/varunajmera0/apache-kafka/kafka-produces/requirements.txt "Requirements File")
+   > pip3 install -r [requirements.txt](https://github.com/varunajmera0/apache-kafka/blob/main/kafka-producers/requirements.txt "Requirements File")
  - Run FastAPI Server
    > uvicorn adv_topic_producer:app --reload
  - Hit this API in Postman/Insomnia
@@ -37,7 +37,7 @@ I have implemented `acks` and `retries` configs. You can use [this](https://gith
    > {"count": 3 }
  - After sometime, bring down 2 brokers using `CTRL+C` and hit that API again. You will get an error `NotEnoughReplicasException`.
 
-Same way, you can use [simple broker](https://github.com/varunajmera0/apache-kafka/kafka-produces/basic) example.
+Same way, you can use [simple broker](https://github.com/varunajmera0/apache-kafka/tree/main/kafka-producers/basic) example.
 
  
 

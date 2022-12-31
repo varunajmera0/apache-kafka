@@ -1,19 +1,19 @@
 # 👊 Apache Kafka Producers Simple
 
 ### Instructions
-You can use [this](https://github.com/varunajmera0/apache-kafka/kafka-produces/basic).
+You can use [this](https://github.com/varunajmera0/apache-kafka/tree/main/kafka-producers/basic).
 
- - It will create topic automatically. Kafka config parameters in [.env](https://github.com/varunajmera0/apache-kafka/kafka-produces/basic/.env).
+ - It will create topic automatically. Kafka config parameters in [.env](https://github.com/varunajmera0/apache-kafka/tree/main/kafka-producers/basic/.env).
  - Run Zookeepeer
    > bin/zookeeper-server-start.sh config/zookeeper.properties
- - Run Brokers - Copy these [brokers files](https://github.com/varunajmera0/apache-kafka/kafka-produces/brokers) in config folder of kafka.
+ - Run Brokers - Copy these [brokers files](https://github.com/varunajmera0/apache-kafka/tree/main/kafka-producers/brokers) in config folder of kafka.
    > bin/kafka-server-start.sh config/server0.properties
    >
    > bin/kafka-server-start.sh config/server1.properties
    > 
    > bin/kafka-server-start.sh config/server2.properties
  - Install Dependencies
-   > pip3 install -r [requirements.txt](https://github.com/varunajmera0/apache-kafka/kafka-produces/requirements.txt "Requirements File")
+   > pip3 install -r [requirements.txt](https://github.com/varunajmera0/apache-kafka/blob/main/kafka-producers/requirements.txt "Requirements File")
  - Run FastAPI Server
    > uvicorn basic_topic_producer:app --reload
  - Hit this API in Postman/Insomnia

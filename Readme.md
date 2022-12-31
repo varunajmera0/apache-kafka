@@ -205,7 +205,7 @@ When we go in the group then we will tell one person to select all jeans and I w
 
 Likewise in Kafka, for horizontal scalability purposes, it is recommended to consume Kafka topics as a group. A topic usually consists of many partitions. These partitions are a unit of parallelism for Kafka consumers. The benefit of leveraging a Kafka consumer group is that the consumers within the group will coordinate to split the work of reading from different partitions.
 
-![Consumers Group Reading](/assets/consumer_group_reading.webp)
+![Consumers Group Reading](./assets/consumer_group_reading.webp)
 
 ## Kafka Consumer Group ID
 
