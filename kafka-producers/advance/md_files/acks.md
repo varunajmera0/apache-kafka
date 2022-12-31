@@ -25,7 +25,7 @@ If using Kafka < v3.0, acks=1
 If using Kafka >= v3.0, acks=all
 ```
 
-![Kafka Message Structure](../../../assets/producers_config/acks.webp "Difference between ack=1 and ack=all")
+![Kafka Message Structure](../../../assets/producers_config/acks.png "Difference between ack=1 and ack=all")
 
 > What is In-sync replicas?
 > - Basically defines how many replicas that the producer must receive before considering a successful commit. 
@@ -44,7 +44,7 @@ The lead replica for a partition checks to see if there are enough in-sync repli
 
 If a topic has three replicas and you set `min.insync.replicas` to 2, then you can only write to a partition in the topic if at least two out of the three replicas are in-sync. When all three replicas are in-sync, everything proceeds normally. This is also true if one of the replicas becomes unavailable. However, if two out of three replicas are not available, the brokers will no longer accept produce requests. Instead, producers that attempt to send data will receive `NotEnoughReplicasException`.
 
-![NotEnoughReplicasException](../../../assets/producers_config/min.insync.replicas.webp "NotEnoughReplicasException")
+![NotEnoughReplicasException](../../../assets/producers_config/min.insync.replicas.png "NotEnoughReplicasException")
 
 The default minimum in-sync replica (`min.insync.replicas`) is 1. It means that if all the followers go down, then ISR only consists of the leader. Even if acks is set to all, it actually only commits the message to 1 broker (the leader) which makes the message vulnerable.
 

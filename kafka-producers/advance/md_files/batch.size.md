@@ -22,7 +22,7 @@ The default `buffer.memory` is 32MB. If the producer sends messages faster than 
 it will exceeds `buffer.memory` then the `send()` call will be blocked up to `max.block.ms` (default 1 minute).
 
 <p align="center">
-<img alt="buffer.memory and max.block.ms" src="../../../assets/producers_config/buffer.memory.webp" title="buffer.memory and max.block.ms"/>
+<img alt="buffer.memory and max.block.ms" src="../../../assets/producers_config/buffer.memory.png" title="buffer.memory and max.block.ms"/>
 </p>
 
 ## linger.ms
@@ -54,7 +54,7 @@ if `Large batch size`:
 
     > Use memory a bit more wastefully as we will always allocate a buffer of the specified batch size.
 
-![Batching](../../../assets/producers_config/Kafka_Producer_Batching.webp "Batching")
+![Batching](../../../assets/producers_config/Kafka_Producer_Batching.png "Batching")
 
 
 > Key Takeaways

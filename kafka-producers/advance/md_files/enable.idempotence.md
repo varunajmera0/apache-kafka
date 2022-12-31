@@ -14,7 +14,7 @@ Retrying to send a failed message often includes a small risk that both messages
 
 - In that case, the broker will end up having the same message twice.
 
-![Duplicate Message](../../../assets/producers_config/duplicate_msg.webp "Duplicate Message")
+![Duplicate Message](../../../assets/producers_config/duplicate_msg.png "Duplicate Message")
 
 Let’s say we have a producer that sends 1M messages to the topic and the broker fails after the messages have been committed but before the producer receives all the acks. 
 In this case, we will probably end up with more than 1M messages on the topic. This is also called `at-lease-once semantics`.
@@ -36,7 +36,7 @@ Idempotent is `exactly-once semantics`.
 > 
 > On the broker side, on a per partition basis, it keeps track of the largest PID-Sequence Number combination that is successfully written. When a lower sequence number is received, it is discarded.
 
-![Idempotent Producer](../../../assets/producers_config/idempotent_producer.webp "Idempotent Producer")
+![Idempotent Producer](../../../assets/producers_config/idempotent_producer.png "Idempotent Producer")
 
 ## max.in.flight.requests.per.connection
 Controls the number of unacknowledged requests the client will send on a single connection before blocking.

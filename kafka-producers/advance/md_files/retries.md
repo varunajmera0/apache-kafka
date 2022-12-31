@@ -34,7 +34,7 @@ The producer will not act upon this error, so it will lose messages. This is cal
 
 This is basically the maximum number of retries the producer would do if the commit fails. 
 
-![Retries](../../../assets/producers_config/retries.webp "Retries")
+![Retries](../../../assets/producers_config/retries.png "Retries")
 
 Users should generally prefer to leave this config unset and instead use `delivery.timeout.ms` properity to control retry behavior.
 
@@ -42,7 +42,7 @@ Users should generally prefer to leave this config unset and instead use `delive
 
 If `retries > 0`, for example, retries = 2147483647 (Kafka >= v2.1), the producer won’t try the request forever, it’s bounded by a timeout. For this, you can set an intuitive Producer Timeout [(KIP-91 – Kafka 2.1)](https://cwiki.apache.org/confluence/display/KAFKA/KIP-91+Provide+Intuitive+User+Timeouts+in+The+Producer) such as delivery.timeout.ms=120000 (= 2 minutes). Records will be failed if they can’t be delivered in delivery.timeout.ms
 
-![Delivery Timeout](../../../assets/producers_config/delivery.timeout.ms.webp "Delivery Timeout")
+![Delivery Timeout](../../../assets/producers_config/delivery.timeout.ms.png "Delivery Timeout")
 
 ## retry.backoff.ms
 
