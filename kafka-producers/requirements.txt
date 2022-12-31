@@ -1,0 +1,5 @@
+kafka-python
+python-dotenv
+fastapi[all]
+pydantic
+Faker
