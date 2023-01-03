@@ -14,7 +14,7 @@ In this section, we will discuss some of the ones we judge are the most importan
 5. [compression.type](https://github.com/varunajmera0/apache-kafka/blob/main/kafka-producers/advance/md_files/enable.idempotence.md  "Compression Type Config")
 
 ### Instructions
-I have implemented `acks` and `retries` configs. You can use [this](https://github.com/varunajmera0/apache-kafka/tree/main/kafka-producers/advance).
+I have implemented `acks` and `retries` and `linger.ms` configs. You can use [this](https://github.com/varunajmera0/apache-kafka/tree/main/kafka-producers/advance).
 
  - It will create topic automatically. Config parameters in [.env](https://github.com/varunajmera0/apache-kafka/blob/main/kafka-producers/advance/.env).
  - Run Zookeepeer

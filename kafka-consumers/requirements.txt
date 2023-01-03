@@ -3,5 +3,3 @@ python-dotenv
 fastapi[all]
 pydantic
 Faker
-confluent-kafka
-fastavro
